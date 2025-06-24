@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1>Pennsylvania Native Wildflower Selector</h1>
+        <p class="lead">Choose native wildflowers that support local wildlife and endangered species</p>
+        
+        <div class="alert alert-info">
+            <strong>🦋 Conservation Focus:</strong> Each plant shows how many native species it supports and any endangered species connections.
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <h3>Filter Plants</h3>
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="bloomTime" class="form-label">Bloom Time</label>
+                    <select class="form-select" id="bloomTime">
+                        <option value="">All</option>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="fall">Fall</option>
+                    </select>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="height" class="form-label">Height</label>
+                    <select class="form-select" id="height">
+                        <option value="">All</option>
+                        <option value="short">Under 2 feet</option>
+                        <option value="medium">2-4 feet</option>
+                        <option value="tall">Over 4 feet</option>
+                    </select>
+                </div>
+                
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="endangeredOnly">
+                        <label class="form-check-label" for="endangeredOnly">
+                            Show only plants supporting endangered species
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-8">
+        <h3>Available Plants</h3>
+        <div id="plantsContainer">
+            <div class="text-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
