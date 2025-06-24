@@ -1,0 +1,70 @@
+{
+  "plants": [
+    {
+      "id": "butterfly-milkweed",
+      "scientificName": "Asclepias tuberosa",
+      "commonName": "Butterfly Milkweed",
+      "plantType": "Perennial",
+      "matureHeight": "1-3 feet",
+      "bloomColors": ["Orange", "Yellow"],
+      "bloomPeriod": ["June", "July", "August"],
+      "soilType": ["Sandy", "Well-drained"],
+      "lightRequirement": "Full sun",
+      "wildlifeSupport": {
+        "butterfliesMoths": 12,
+        "nativeBees": 8,
+        "birds": 15,
+        "totalInsects": 45
+      },
+      "endangeredSpeciesConnections": [{
+        "species": "Monarch Butterfly",
+        "scientificName": "Danaus plexippus",
+        "relationship": "Critical Host Plant",
+        "status": "IUCN Red Listed - Endangered",
+        "significance": "ONLY plant Monarch caterpillars can eat"
+      }]
+    },
+    {
+      "id": "purple-coneflower",
+      "scientificName": "Echinacea purpurea",
+      "commonName": "Purple Coneflower",
+      "plantType": "Perennial",
+      "matureHeight": "2-4 feet",
+      "bloomColors": ["Purple", "Pink"],
+      "bloomPeriod": ["June", "July", "August", "September"],
+      "soilType": ["Well-drained", "Clay", "Sandy"],
+      "lightRequirement": "Full sun",
+      "wildlifeSupport": {
+        "butterfliesMoths": 8,
+        "nativeBees": 12,
+        "birds": 18,
+        "totalInsects": 38
+      },
+      "endangeredSpeciesConnections": []
+    },
+    {
+      "id": "wild-bergamot",
+      "scientificName": "Monarda fistulosa",
+      "commonName": "Wild Bergamot",
+      "plantType": "Perennial",
+      "matureHeight": "2-4 feet",
+      "bloomColors": ["Purple", "Pink", "White"],
+      "bloomPeriod": ["July", "August", "September"],
+      "soilType": ["Well-drained", "Clay", "Sandy"],
+      "lightRequirement": "Full sun to partial shade",
+      "wildlifeSupport": {
+        "butterfliesMoths": 15,
+        "nativeBees": 25,
+        "birds": 12,
+        "totalInsects": 52
+      },
+      "endangeredSpeciesConnections": [{
+        "species": "Rusty Patched Bumble Bee",
+        "scientificName": "Bombus affinis",
+        "relationship": "Preferred Nectar Source",
+        "status": "Federally Endangered",
+        "significance": "Critical late-season nectar for endangered native bee"
+      }]
+    }
+  ]
+}
